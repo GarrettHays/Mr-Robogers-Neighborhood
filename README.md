@@ -20,12 +20,12 @@ _This project creates an application that intakes user input and runs it through
 | Test Description  | Input Example (Code) | Expected Output Example |
 | ------------- | ------------- | ------------- |
 | It should not allow for anything other than numbers to be entered.  | roboger("hello");  | "Please enter a number."  |
-| It should not allow for negative numbers to be entered.  | roboger("-15");  | "Please enter a positive number."  |
+| It should not allow for negative numbers to be entered.  | roboger("-5");  | "Please enter a positive number."  |
 | It should not allow for empty submissions.  | --  | "Enter a number."  |
-| It should return an array of numbers from 0 to the user's inputted number | roboger(5);  | [0, 1, 2, 3, 4, 5]  |
-| It should return "Won't you be my neighbor?" if user inputter number contains 3, and return all numbers that do not contain 3 | roboger(5)  | 0, beep!, boop!, Won't you be my neighbor?, 4, 5 |
-| It should return "boop!" if user inputted number contains 2, and return all numbers that do not contain 2.  | roboger(5)  | 0, beep!, boop!, 3, 4, 5 |
-| It should return "beep!" if user inputted number contains 1, and return all numbers that do not contain 1.  | roboger(5)  | 0, beep!, 2, 3, 4, 5 |
+| It should return an array of numbers from 0 to the user's inputted number | roboger("5");  | [0, 1, 2, 3, 4, 5]  |
+| It should return "Won't you be my neighbor?" if user inputter number contains 3, and return all numbers that do not contain 3 | roboger("5")  | 0, beep!, boop!, Won't you be my neighbor?, 4, 5 |
+| It should return "boop!" if user inputted number contains 2, and return all numbers that do not contain 2.  | roboger("5")  | 0, beep!, boop!, 3, 4, 5 |
+| It should return "beep!" if user inputted number contains 1, and return all numbers that do not contain 1.  | roboger("5")  | 0, beep!, 2, 3, 4, 5 |
 
 
 
