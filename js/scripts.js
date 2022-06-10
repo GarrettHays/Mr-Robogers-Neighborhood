@@ -1,24 +1,37 @@
-// Business Logic
-function beepBoop(number) {
-  let phrase = [];
-
-  for(let i = 0; i <= parseInt(number); i++) {
-    if (number.toString().includes(1[i])) {
-      phrase.push("beep");   
-    } else {
-      phrase.push(i);
+//Utility Logic
+function numberCounter(number) {
+  let newArray = [];
+  let numberInt = parseInt(number);
+  for (let i = 0; i <= numberInt; i++) {
+    newArray.push(i.toString());
   }
-
-  return phrase;
-
-  };
+  console.log(newArray);
+  return newArray;
 }
 
-// UI Logic
-$(document).ready(function(){
-  $("form#phrase").submit(function(event){
-    event.preventDefault();
+// Business Logic
+function roboger(number) {
+  let phrase = [];
+  if (number.trim().length === 0) {
+    return "Enter a Number";
+  }
+  let numberString = numberCounter(number); 
+
+  for(let i = 0; i < numberString.length; i++) {
+    if (numberString[i].includes(1)) {
+      phrase.push("beep!");   
+    } else {
+      phrase.push("" + numberString[i]);
+  }
+  };
+  return phrase.toString();
+}
+
+// // UI Logic
+// $(document).ready(function(){
+//   $("form#phrase").submit(function(event){
+//     event.preventDefault();
 
 
-  });
-});
+//   });
+// });
