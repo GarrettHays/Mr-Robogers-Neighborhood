@@ -1,21 +1,20 @@
 // Business Logic
-function forLoop(number) {
+function beepBoop(number) {
   let phrase = [];
 
-  for(var i = 1; i <= number; i++) {
-    if (number.includes("1"[i])) {
-      phrase.push("beep");
-    } else if (number.includes("2"[i])) {
-      phrase.push("boop");
-    } (number.includes("3"[i])) {
-        phrase.push("Won't you be my neighbor?");
-    } else {
-      result.push(i);
-    }
+  for(var i = 0; i <= number; i++) {
+       phrase.push(i);
   }
 
-  return result;
+  return phrase;
 
 };
 
 // UI Logic
+$(document).ready(function(){
+  $("form#phrase").submit(function(event){
+    event.preventDefault();
+
+
+  });
+});
