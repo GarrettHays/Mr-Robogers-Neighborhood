@@ -2505,7 +2505,7 @@ textarea.form-control {
   -ms-user-select: none;
   user-select: none;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 2px solid black;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
