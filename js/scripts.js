@@ -19,7 +19,7 @@ function roboger(number) {
   if (typeof number !== "string") {
     return "Number must be in string format.";
   }
-  
+
   let numberInt = parseInt(number);
   if (numberInt < 0) {
     return "Please enter a positive number.";
