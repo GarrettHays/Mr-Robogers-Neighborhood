@@ -19,7 +19,9 @@ function roboger(number) {
 
   for(let i = 0; i < numberString.length; i++) {
     if (numberString[i].includes(1)) {
-      phrase.push("beep!");   
+      phrase.push("beep!");  
+    } else if (numberString[i].includes(2)) {
+      phrase.push("boop!"); 
     } else {
       phrase.push("" + numberString[i]);
   }
