@@ -19,3 +19,27 @@ body {
   display:none
 }
 
+img {
+  float: right;
+  width: 50%;
+  height: auto;
+  margin: 50px;
+  padding: 1px;
+  margin-top: auto;
+  border: ridge rgb(51, 51, 49);
+  border-width: 10px;
+  border-radius: 0.3rem;
+  background-color: rgba(170, 169, 169, 0.527);
+}
+
+h1 {
+  color: white;
+  text-shadow: 0 0 10px red;
+  font-size: 75px;
+}
+
+h5 {
+  color: white;
+  text-shadow: 0 0 5px red;
+  font-size: 20px;
+}
