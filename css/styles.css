@@ -1,0 +1,21 @@
+button:hover {
+  background-color:springgreen;
+}
+
+.btn:hover {
+  background-color:springgreen;
+}
+
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 50px;
+}
+
+.form-group {
+  padding-bottom: 20px; 
+}
+
+#numberOutput {
+  display:none
+}
+
